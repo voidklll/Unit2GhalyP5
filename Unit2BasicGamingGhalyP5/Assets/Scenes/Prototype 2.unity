@@ -443,7 +443,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -475,6 +475,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &710067497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710067499}
+  - component: {fileID: 710067498}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &710067498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710067497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7958455b3b9081b4d94cc38e4a1c9b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 3738103108294925035, guid: 383e55db78ed1b34f8db623fbd8f2752, type: 3}
+  - {fileID: 5577964567212099693, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+  - {fileID: 1142393190043924263, guid: 06bebd18c896762488c97208721aa472, type: 3}
+--- !u!4 &710067499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710067497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9614844, y: 11.520493, z: 7.8960876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &815133156
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -678,7 +726,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590138454}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &329960287681914590
+--- !u!1001 &1324703207805417244
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -686,49 +734,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 1142393190043924263, guid: 06bebd18c896762488c97208721aa472, type: 3}
+      propertyPath: m_Name
+      value: Dog_RhodesianRidgeback_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.13
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalPosition.z
       value: 10.29
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 5023074385528825652, guid: 06bebd18c896762488c97208721aa472, type: 3}
+    - target: {fileID: 4526887617708170140, guid: 06bebd18c896762488c97208721aa472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7791670891851438984, guid: 06bebd18c896762488c97208721aa472, type: 3}
-      propertyPath: m_Name
-      value: Dog_RhodesianRidgeback_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -792,7 +840,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57347418c0e173e42a90ed07b560a0ef, type: 3}
---- !u!1001 &5351563568649976588
+--- !u!1001 &6446480506560683604
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -800,49 +848,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1484068176719875622, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
-      propertyPath: m_Name
-      value: Dog_Doberman_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.792
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 9.89
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
-    - target: {fileID: 2406721319642087090, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+    - target: {fileID: 2019470717609459969, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577964567212099693, guid: 74094136e4977874b9be2f715c4762e6, type: 3}
+      propertyPath: m_Name
+      value: Dog_Doberman_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -914,7 +962,8 @@ SceneRoots:
   - {fileID: 170076735}
   - {fileID: 992285706}
   - {fileID: 815133156}
-  - {fileID: 329960287681914590}
-  - {fileID: 5351563568649976588}
+  - {fileID: 1324703207805417244}
+  - {fileID: 6446480506560683604}
   - {fileID: 7524129895071430964}
   - {fileID: 4093456014800916737}
+  - {fileID: 710067499}
